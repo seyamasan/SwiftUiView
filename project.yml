@@ -1,0 +1,16 @@
+name: SwiftUiView
+options:
+  deploymentTarget:
+    iOS: '15.0'
+  postGenCommand: pod install
+
+targets:
+  SwiftUiView:
+    type: application
+    platform: iOS
+    deploymentTarget: '15.0'
+    sources: [SwiftUiView]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.w.kot.SwiftUiView
+        INFO_PLIST_FILE: Info.plist  # Info.plistファイルを指定
