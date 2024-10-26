@@ -1,14 +1,14 @@
 name: SwiftUiView
 options:
   deploymentTarget:
-    iOS: '15.0'
+    iOS: '16.0'
   postGenCommand: pod install
 
 targets:
   SwiftUiView:
     type: application
     platform: iOS
-    deploymentTarget: '15.0'
+    deploymentTarget: '16.0'
     sources: [SwiftUiView]
     settings:
       base:
