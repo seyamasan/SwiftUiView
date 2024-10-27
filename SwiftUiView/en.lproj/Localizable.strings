@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  SwiftUiView
+
+  Created by seyamasan on 2024/10/27.
+  
+*/
+
+//MARK:
+"homeViewTitle" = "SwiftUI View";
+"unknownScreen" = "Unknown Screen.";
+
+//MARK: Chapter2View
+"chapter2ViewTitle" = "Chapter2 View";
+"chapter2ViewDescription" = "View of Chapter 2.";

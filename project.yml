@@ -2,6 +2,11 @@ name: SwiftUiView
 options:
   deploymentTarget:
     iOS: '16.0'
+  localizations:
+    - language: ja
+      path: "SwiftUiView/ja.lproj" # 日本語ローカライズ
+    - language: en
+      path: "SwiftUiView/en.lproj" # 英語ローカライズ
   postGenCommand: pod install
 
 targets:

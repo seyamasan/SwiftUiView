@@ -13,10 +13,13 @@
     <key>CFBundleExecutable</key>
     <string>SwiftUiView</string>
     <key>UISupportedInterfaceOrientations</key>  <!-- インターフェースの向きをサポート -->
-    <array>
+    <array> <!-- 全部 -->
         <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
         <string>UIInterfaceOrientationLandscapeLeft</string>
         <string>UIInterfaceOrientationLandscapeRight</string>
     </array>
+    <key>UILaunchScreen</key>
+	<dict/>
 </dict>
 </plist>
