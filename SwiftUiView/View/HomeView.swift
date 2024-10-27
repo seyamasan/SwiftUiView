@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    let screens: [String] = [String(localized: "chapter2ViewTitle")]
+    
     var body: some View {
-        let screens: [String] = [String(localized: "chapter2ViewTitle")]
         NavigationStack { // タイトルを表示するために使ってる
             ScrollView {
                 VStack(spacing: 16) { // ボタン間のスペース

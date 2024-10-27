@@ -13,3 +13,33 @@
 //MARK: Chapter2View
 "chapter2ViewTitle" = "Chapter2 View";
 "chapter2ViewDescription" = "View of Chapter 2.";
+"chapter2VStack" = "Line up vertically.";
+"chapter2HStack" = "Line up side by side.";
+
+//MARK: Chapter3View
+"chapter3ViewTitle" = "Chapter3 View";
+"chapter3ViewDescription" = "View of Chapter 3.";
+
+//MARK: Chapter4View
+"chapter4ViewTitle" = "Chapter4 View";
+"chapter4ViewDescription" = "View of Chapter 4.";
+
+//MARK: Chapter5View
+"chapter5ViewTitle" = "Chapter5 View";
+"chapter5ViewDescription" = "View of Chapter 5.";
+
+//MARK: Chapter6View
+"chapter6ViewTitle" = "Chapter6 View";
+"chapter6ViewDescription" = "View of Chapter 6.";
+
+//MARK: Chapter5View
+"chapter7ViewTitle" = "Chapter7 View";
+"chapter7ViewDescription" = "View of Chapter 7.";
+
+//MARK: Chapter5View
+"chapter8ViewTitle" = "Chapter8 View";
+"chapter8ViewDescription" = "View of Chapter 8.";
+
+//MARK: Chapter5View
+"chapter9ViewTitle" = "Chapter9 View";
+"chapter9ViewDescription" = "View of Chapter 9.";

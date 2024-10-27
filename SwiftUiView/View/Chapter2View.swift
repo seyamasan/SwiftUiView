@@ -18,6 +18,25 @@ struct Chapter2View: View {
                 .padding()
             Spacer()
         }
+        
+        VStack { // VStackで縦に整列
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundColor(.white)
+            
+            ForEach(1...3, id: \.self) { index in
+                Text("\(index): " + String(localized: "chapter2VStack"))
+            }
+            
+            HStack { // HStackで横並び
+                ForEach(1...3, id: \.self) { index in
+                    Text("\(index): " + String(localized: "chapter2HStack"))
+                }
+            }
+            
+            Spacer()
+        }
+        
         .navigationTitle(title)
     }
 }
