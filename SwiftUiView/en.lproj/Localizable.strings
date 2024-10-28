@@ -15,6 +15,9 @@
 "chapter2ViewDescription" = "View of Chapter 2.";
 "chapter2VStack" = "Line up vertically.";
 "chapter2HStack" = "Line up side by side.";
+"chapter2WontToEatRamen" = "I want to eat ramen.\n No, I want to eat Ramen Jiro.\n No, I want to eat Iekei ramen too.\n No, I guess I should eat it all.\n Oh, I want to eat Aburasoba too.";
+"chapter2WontToEatRamenEn" = "I want to eat ramen.\n No, I want to eat Ramen Jiro.\n No, I want to eat Iekei ramen too.\n No, I guess I should eat it all.\n Oh, I want to eat Aburasoba too.";
+
 
 //MARK: Chapter3View
 "chapter3ViewTitle" = "Chapter3 View";

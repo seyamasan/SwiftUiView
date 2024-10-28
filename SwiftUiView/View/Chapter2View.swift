@@ -15,27 +15,46 @@ struct Chapter2View: View {
         VStack {
             Text(String(localized: "chapter2ViewDescription"))
                 .font(.title2)
-                .padding()
-            Spacer()
-        }
+        }.padding(.bottom, 40)
         
-        VStack { // VStackで縦に整列
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.white)
-            
-            ForEach(1...3, id: \.self) { index in
-                Text("\(index): " + String(localized: "chapter2VStack"))
-            }
-            
-            HStack { // HStackで横並び
+        ScrollView {
+            VStack { // VStackで縦に整列
+                Image(systemName: "globe")
+                    .imageScale(.large) // スケールをラージにする
+                    .foregroundColor(.blue) // 青色にする
+                
                 ForEach(1...3, id: \.self) { index in
-                    Text("\(index): " + String(localized: "chapter2HStack"))
+                    Text("\(index): " + String(localized: "chapter2VStack"))
+                        .font(.title) // 書体をtitleに設定
+                        .fontWeight(.thin) // フォントの太さをthinに設定
+                        .border(Color.green, width: 2.0) // 枠の色と太さ設定
+                        .background(Color.cyan) // 背景の色変更
+                        .padding(.top) // 上に余白を開ける
+                        
+                }
+                
+                HStack { // HStackで横並び
+                    ForEach(1...3, id: \.self) { index in
+                        Text("\(index): " + String(localized: "chapter2HStack"))
+                            .foregroundColor(Color.red) // 文字を赤色に設定
+                            .font(.system(size: 12.0)) // テキストサイズ変更
+                            .border(Color.orange, width: 1.0)
+                            .padding(.all) // 上下左右に余白
+                    }
+                }
+                
+                Spacer()
+                
+                VStack(spacing: 10) {
+                    Text(String(localized: "chapter2WontToEatRamen"))
+                    Text(String(localized: "chapter2WontToEatRamenEn"))
+                        .italic() // イタリック体で表示
+                        .offset(x: 30, y: 0) // x軸を30ずらす
+                    Spacer()
                 }
             }
-            
-            Spacer()
         }
+        
         
         .navigationTitle(title)
     }
