@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct HomeView: View {
-    let screens: [String] = [String(localized: "chapter2ViewTitle")]
+    let screens: [String] = [
+        String(localized: "textViewTitle"),
+        String(localized: "imageViewTitle")
+    ]
     
     var body: some View {
         NavigationStack { // タイトルを表示するために使ってる
             ScrollView {
-                VStack(spacing: 16) { // ボタン間のスペース
+                // LazyVStackはスクロール時に必要なタイミングで子ビューを生成する
+                LazyVStack(spacing: 16) { // ボタン間のスペース
                     ForEach(Array(screens.enumerated()), id: \.element) { index, screen in
                         NavigationLink(destination: self.viewForScreen(screen)) {
                             Text(screen)
@@ -36,8 +40,10 @@ struct HomeView: View {
     @ViewBuilder
     func viewForScreen(_ screen: String) -> some View {
         switch screen {
-        case String(localized: "chapter2ViewTitle"):
-            Chapter2View(title: screen)
+        case String(localized: "textViewTitle"):
+            TextView(title: screen)
+        case String(localized: "imageViewTitle"):
+            ImageView(title: screen)
         default:
             Text(String(localized: "unknownScreen"))
         }

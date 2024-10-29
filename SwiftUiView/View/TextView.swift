@@ -1,21 +1,19 @@
 //
-//  Chapter2View.swift
+//  TextView.swift
 //  SwiftUiView
 //
 //  Created by seyamasan on 2024/10/27.
 //
-// チャプター2の勉強用画面
 
 import SwiftUI
 
-struct Chapter2View: View {
+struct TextView: View {
     var title: String
     
     var body: some View {
-        VStack {
-            Text(String(localized: "chapter2ViewDescription"))
-                .font(.title2)
-        }.padding(.bottom, 40)
+        Text(String(localized: "textViewDescription"))
+            .font(.title2)
+            .padding(.bottom, 40)
         
         ScrollView {
             VStack { // VStackで縦に整列
@@ -24,7 +22,7 @@ struct Chapter2View: View {
                     .foregroundColor(.blue) // 青色にする
                 
                 ForEach(1...3, id: \.self) { index in
-                    Text("\(index): " + String(localized: "chapter2VStack"))
+                    Text("\(index): " + String(localized: "textVStack"))
                         .font(.title) // 書体をtitleに設定
                         .fontWeight(.thin) // フォントの太さをthinに設定
                         .border(Color.green, width: 2.0) // 枠の色と太さ設定
@@ -35,7 +33,7 @@ struct Chapter2View: View {
                 
                 HStack { // HStackで横並び
                     ForEach(1...3, id: \.self) { index in
-                        Text("\(index): " + String(localized: "chapter2HStack"))
+                        Text("\(index): " + String(localized: "textHStack"))
                             .foregroundColor(Color.red) // 文字を赤色に設定
                             .font(.system(size: 12.0)) // テキストサイズ変更
                             .border(Color.orange, width: 1.0)
@@ -46,8 +44,8 @@ struct Chapter2View: View {
                 Spacer()
                 
                 VStack(spacing: 10) {
-                    Text(String(localized: "chapter2WontToEatRamen"))
-                    Text(String(localized: "chapter2WontToEatRamenEn"))
+                    Text(String(localized: "textWontToEatRamen"))
+                    Text(String(localized: "textWontToEatRamenEn"))
                         .italic() // イタリック体で表示
                         .offset(x: 30, y: 0) // x軸を30ずらす
                     Spacer()
@@ -61,5 +59,5 @@ struct Chapter2View: View {
 }
 
 #Preview {
-    Chapter2View(title: String(localized: "chapter2ViewTitle"))
+    TextView(title: String(localized: "textViewTitle"))
 }

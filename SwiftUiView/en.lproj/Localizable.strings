@@ -10,39 +10,16 @@
 "homeViewTitle" = "SwiftUI View";
 "unknownScreen" = "Unknown Screen.";
 
-//MARK: Chapter2View
-"chapter2ViewTitle" = "Chapter2 View";
-"chapter2ViewDescription" = "View of Chapter 2.";
-"chapter2VStack" = "Line up vertically.";
-"chapter2HStack" = "Line up side by side.";
-"chapter2WontToEatRamen" = "I want to eat ramen.\n No, I want to eat Ramen Jiro.\n No, I want to eat Iekei ramen too.\n No, I guess I should eat it all.\n Oh, I want to eat Aburasoba too.";
-"chapter2WontToEatRamenEn" = "I want to eat ramen.\n No, I want to eat Ramen Jiro.\n No, I want to eat Iekei ramen too.\n No, I guess I should eat it all.\n Oh, I want to eat Aburasoba too.";
+//MARK: TextView
+"textViewTitle" = "Text View";
+"textViewDescription" = "View of Text.";
+"textVStack" = "Line up vertically.";
+"textHStack" = "Line up side by side.";
+"textWontToEatRamen" = "I want to eat ramen.\n No, I want to eat Ramen Jiro.\n No, I want to eat Iekei ramen too.\n No, I guess I should eat it all.\n Oh, I want to eat Aburasoba too.";
+"textWontToEatRamenEn" = "I want to eat ramen.\n No, I want to eat Ramen Jiro.\n No, I want to eat Iekei ramen too.\n No, I guess I should eat it all.\n Oh, I want to eat Aburasoba too.";
 
-
-//MARK: Chapter3View
-"chapter3ViewTitle" = "Chapter3 View";
-"chapter3ViewDescription" = "View of Chapter 3.";
-
-//MARK: Chapter4View
-"chapter4ViewTitle" = "Chapter4 View";
-"chapter4ViewDescription" = "View of Chapter 4.";
-
-//MARK: Chapter5View
-"chapter5ViewTitle" = "Chapter5 View";
-"chapter5ViewDescription" = "View of Chapter 5.";
-
-//MARK: Chapter6View
-"chapter6ViewTitle" = "Chapter6 View";
-"chapter6ViewDescription" = "View of Chapter 6.";
-
-//MARK: Chapter5View
-"chapter7ViewTitle" = "Chapter7 View";
-"chapter7ViewDescription" = "View of Chapter 7.";
-
-//MARK: Chapter5View
-"chapter8ViewTitle" = "Chapter8 View";
-"chapter8ViewDescription" = "View of Chapter 8.";
-
-//MARK: Chapter5View
-"chapter9ViewTitle" = "Chapter9 View";
-"chapter9ViewDescription" = "View of Chapter 9.";
+//MARK: ImageView
+"imageViewTitle" = "Image View";
+"imageViewDescription" = "View of Image.";
+"imageViewSeaText" = "This is the sea at night.\n Isn't it beautiful?";
+"imageViewNightViewText" = "This is the night view.\n It's incredibly beautiful, isn't it?";

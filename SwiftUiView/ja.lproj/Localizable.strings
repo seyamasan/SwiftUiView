@@ -10,38 +10,16 @@
 "homeViewTitle" = "SwiftUI View";
 "unknownScreen" = "画面がありません。";
 
-//MARK: Chapter2View
-"chapter2ViewTitle" = "Chapter2 View";
-"chapter2ViewDescription" = "Chapter2のViewです。";
-"chapter2VStack" = "縦に並びます。";
-"chapter2HStack" = "横に並びます。";
-"chapter2WontToEatRamen" = "ラーメン食べたい。\nいや、ラーメン二郎が食べたい。\nいや、家系ラーメンも食べたい。\nいや、全部食べよかな。\nあ、油そばも食べたい。";
-"chapter2WontToEatRamenEn" = "I want to eat ramen.\n No, I want to eat Ramen Jiro.\n No, I want to eat Iekei ramen too.\n No, I guess I should eat it all.\n Oh, I want to eat Aburasoba too.";
+//MARK: TextView
+"textViewTitle" = "Text View";
+"textViewDescription" = "Textを活用したViewです。";
+"textVStack" = "縦に並びます。";
+"textHStack" = "横に並びます。";
+"textWontToEatRamen" = "ラーメン食べたい。\nいや、ラーメン二郎が食べたい。\nいや、家系ラーメンも食べたい。\nいや、全部食べよかな。\nあ、油そばも食べたい。";
+"textWontToEatRamenEn" = "I want to eat ramen.\n No, I want to eat Ramen Jiro.\n No, I want to eat Iekei ramen too.\n No, I guess I should eat it all.\n Oh, I want to eat Aburasoba too.";
 
-//MARK: Chapter3View
-"chapter3ViewTitle" = "Chapter3 View";
-"chapter3ViewDescription" = "Chapter3のViewです。";
-
-//MARK: Chapter4View
-"chapter4ViewTitle" = "Chapter4 View";
-"chapter4ViewDescription" = "Chapter4のViewです。";
-
-//MARK: Chapter5View
-"chapter5ViewTitle" = "Chapter5 View";
-"chapter5ViewDescription" = "Chapter5のViewです。";
-
-//MARK: Chapter6View
-"chapter6ViewTitle" = "Chapter6 View";
-"chapter6ViewDescription" = "Chapter6のViewです。";
-
-//MARK: Chapter5View
-"chapter7ViewTitle" = "Chapter7 View";
-"chapter7ViewDescription" = "Chapter7のViewです。";
-
-//MARK: Chapter5View
-"chapter8ViewTitle" = "Chapter8 View";
-"chapter8ViewDescription" = "Chapter8のViewです。";
-
-//MARK: Chapter5View
-"chapter9ViewTitle" = "Chapter9 View";
-"chapter9ViewDescription" = "Chapter9のViewです。";
+//MARK: ImageView
+"imageViewTitle" = "Image View";
+"imageViewDescription" = "Imageを活用したViewです。";
+"imageViewSeaText" = "夜の海です。綺麗でしょ。";
+"imageViewNightViewText" = "夜景です。やけに綺麗でしょ。";
