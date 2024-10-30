@@ -23,3 +23,8 @@
 "imageViewDescription" = "Imageを活用したViewです。";
 "imageViewSeaText" = "夜の海です。綺麗でしょ。";
 "imageViewNightViewText" = "夜景です。やけに綺麗でしょ。";
+"imageViewGoShapeView" = "図形ViewへGo!";
+
+//MARK: ShapeView
+"shapeViewTitle" = "Shape View";
+"shapeViewDescription" = "図形のViewです。";

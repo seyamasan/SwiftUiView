@@ -23,3 +23,8 @@
 "imageViewDescription" = "View of Image.";
 "imageViewSeaText" = "This is the sea at night.\n Isn't it beautiful?";
 "imageViewNightViewText" = "This is the night view.\n It's incredibly beautiful, isn't it?";
+"imageViewGoShapeView" = "Go Shape View";
+
+//MARK: ShapeView
+"shapeViewTitle" = "Shape View";
+"shapeViewDescription" = "View of the shape.";
