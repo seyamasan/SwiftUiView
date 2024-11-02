@@ -65,7 +65,7 @@ struct ImageView: View {
                 Text(String(localized: "imageViewGoShapeView"))
                     .frame(maxWidth: .infinity) // ボタンを横いっぱいに広げる
                     .padding()
-                    .background(Color.orange)
+                    .background(.orange)
                     .foregroundColor(.black)
                     .cornerRadius(8)
             }

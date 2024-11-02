@@ -25,8 +25,8 @@ struct TextView: View {
                     Text("\(index): " + String(localized: "textVStack"))
                         .font(.title) // 書体をtitleに設定
                         .fontWeight(.thin) // フォントの太さをthinに設定
-                        .border(Color.green, width: 2.0) // 枠の色と太さ設定
-                        .background(Color.cyan) // 背景の色変更
+                        .border(.green, width: 2.0) // 枠の色と太さ設定
+                        .background(.cyan) // 背景の色変更
                         .padding(.top) // 上に余白を開ける
                         
                 }
@@ -34,9 +34,9 @@ struct TextView: View {
                 HStack { // HStackで横並び
                     ForEach(1...3, id: \.self) { index in
                         Text("\(index): " + String(localized: "textHStack"))
-                            .foregroundColor(Color.red) // 文字を赤色に設定
+                            .foregroundColor(.red) // 文字を赤色に設定
                             .font(.system(size: 12.0)) // テキストサイズ変更
-                            .border(Color.orange, width: 1.0)
+                            .border(.orange, width: 1.0)
                             .padding(.all) // 上下左右に余白
                     }
                 }

@@ -28,3 +28,4 @@
 //MARK: ShapeView
 "shapeViewTitle" = "Shape View";
 "shapeViewDescription" = "図形のViewです。";
+"shapeViewGradient" = "グラデーション";

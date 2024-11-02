@@ -28,3 +28,4 @@
 //MARK: ShapeView
 "shapeViewTitle" = "Shape View";
 "shapeViewDescription" = "View of the shape.";
+"shapeViewGradient" = "Gradient";
