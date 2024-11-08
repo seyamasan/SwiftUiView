@@ -38,7 +38,7 @@ struct HomeView: View {
     
     // 各画面に対応するビューを返すメソッド
     @ViewBuilder
-    func viewForScreen(_ screen: String) -> some View {
+    private func viewForScreen(_ screen: String) -> some View {
         switch screen {
         case String(localized: "textViewTitle"):
             TextView(title: screen)

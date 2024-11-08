@@ -24,6 +24,8 @@
 "imageViewSeaText" = "夜の海です。綺麗でしょ。";
 "imageViewNightViewText" = "夜景です。やけに綺麗でしょ。";
 "imageViewGoShapeView" = "図形ViewへGo!";
+"imageViewJellyfishText" = "クラゲってなんか綺麗。";
+"imageViewFishText" = "魚だらけ。";
 
 //MARK: ShapeView
 "shapeViewTitle" = "Shape View";

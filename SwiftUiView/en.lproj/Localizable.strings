@@ -24,6 +24,8 @@
 "imageViewSeaText" = "This is the sea at night.\n Isn't it beautiful?";
 "imageViewNightViewText" = "This is the night view.\n It's incredibly beautiful, isn't it?";
 "imageViewGoShapeView" = "Go Shape View";
+"imageViewJellyfishText" = "Jellyfish are so beautiful.";
+"imageViewFishText" = "Full of fish.";
 
 //MARK: ShapeView
 "shapeViewTitle" = "Shape View";
