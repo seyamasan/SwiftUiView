@@ -8,10 +8,17 @@
 import SwiftUI
 
 struct ImageView: View {
-    var title: String
+    private var title: String
+    private var discripition: String
+    private let shapeViewInfo: Screens.ScreenInformations = .shapeView
+    
+    init(title: String, discripition: String) {
+        self.title = title
+        self.discripition = discripition
+    }
     
     var body: some View {
-        Text(String(localized: "imageViewDescription"))
+        Text(self.discripition)
             .font(.title2)
             .padding(.bottom, 40)
         
@@ -25,7 +32,10 @@ struct ImageView: View {
             }
             
             NavigationLink(
-                destination: ShapeView(title: String(localized: "shapeViewTitle"))
+                destination: ShapeView(
+                    title: self.shapeViewInfo.screenTitle,
+                    discripition: self.shapeViewInfo.screenDescription
+                )
             ) {
                 Text(String(localized: "imageViewGoShapeView"))
                     .frame(maxWidth: .infinity)
@@ -188,5 +198,9 @@ struct ImageView: View {
 }
 
 #Preview {
-    ImageView(title: String(localized: "imageViewTitle"))
+    let screenInfo: Screens.ScreenInformations = .imageView
+    ImageView(
+        title: screenInfo.screenTitle,
+        discripition: screenInfo.screenDescription
+    )
 }

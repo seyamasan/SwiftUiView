@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct TextView: View {
-    var title: String
+    private var title: String
+    private var discripition: String
+    
+    init(title: String, discripition: String) {
+        self.title = title
+        self.discripition = discripition
+    }
     
     var body: some View {
-        Text(String(localized: "textViewDescription"))
+        Text(self.discripition)
             .font(.title2)
             .padding(.bottom, 40)
         
@@ -54,10 +60,14 @@ struct TextView: View {
         }
         
         
-        .navigationTitle(title)
+        .navigationTitle(self.title)
     }
 }
 
 #Preview {
-    TextView(title: String(localized: "textViewTitle"))
+    let screenInfo: Screens.ScreenInformations = .textView
+    TextView(
+        title: screenInfo.screenTitle,
+        discripition: screenInfo.screenDescription
+    )
 }

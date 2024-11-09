@@ -8,10 +8,16 @@
 import SwiftUI
 
 struct ShapeView: View {
-    var title: String
+    private var title: String
+    private var discripition: String
+    
+    init(title: String, discripition: String) {
+        self.title = title
+        self.discripition = discripition
+    }
     
     var body: some View {
-        Text(String(localized: "shapeViewDescription"))
+        Text(self.discripition)
             .font(.title2)
             .padding(.bottom, 40)
         
@@ -133,10 +139,14 @@ struct ShapeView: View {
             .frame(maxWidth: .infinity)
         }
         
-        .navigationBarTitle(title)
+        .navigationBarTitle(self.title)
     }
 }
 
 #Preview {
-    ShapeView(title: String(localized: "shapeViewTitle"))
+    let screenInfo: Screens.ScreenInformations = .shapeView
+    ShapeView(
+        title: screenInfo.screenTitle,
+        discripition: screenInfo.screenDescription
+    )
 }

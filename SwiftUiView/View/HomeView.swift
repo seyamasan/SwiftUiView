@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
-    let screens: [String] = [
-        String(localized: "textViewTitle"),
-        String(localized: "imageViewTitle")
+    let screens: [Screens.ScreenInformations] = [
+        .textView,
+        .imageView
     ]
     
     var body: some View {
@@ -18,9 +18,9 @@ struct HomeView: View {
             ScrollView {
                 // LazyVStackはスクロール時に必要なタイミングで子ビューを生成する
                 LazyVStack(spacing: 16) { // ボタン間のスペース
-                    ForEach(Array(screens.enumerated()), id: \.element) { index, screen in
+                    ForEach(Array(self.screens.enumerated()), id: \.element) { index, screen in
                         NavigationLink(destination: self.viewForScreen(screen)) {
-                            Text(screen)
+                            Text(screen.screenTitle)
                                 .frame(maxWidth: .infinity) // ボタンを横いっぱいに広げる
                                 .padding()
                                 .background(Color.blue)
@@ -38,12 +38,12 @@ struct HomeView: View {
     
     // 各画面に対応するビューを返すメソッド
     @ViewBuilder
-    private func viewForScreen(_ screen: String) -> some View {
+    private func viewForScreen(_ screen: Screens.ScreenInformations) -> some View {
         switch screen {
-        case String(localized: "textViewTitle"):
-            TextView(title: screen)
-        case String(localized: "imageViewTitle"):
-            ImageView(title: screen)
+        case .textView:
+            TextView(title: screen.screenTitle, discripition: screen.screenDescription)
+        case .imageView:
+            ImageView(title: screen.screenTitle, discripition: screen.screenDescription)
         default:
             Text(String(localized: "unknownScreen"))
         }
