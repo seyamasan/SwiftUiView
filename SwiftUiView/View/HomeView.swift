@@ -18,7 +18,7 @@ struct HomeView: View {
             ScrollView {
                 // LazyVStackはスクロール時に必要なタイミングで子ビューを生成する
                 LazyVStack(spacing: 16) { // ボタン間のスペース
-                    ForEach(Array(self.screens.enumerated()), id: \.element) { index, screen in
+                    ForEach(self.screens, id: \.self) { screen in
                         NavigationLink(destination: self.viewForScreen(screen)) {
                             Text(screen.screenTitle)
                                 .frame(maxWidth: .infinity) // ボタンを横いっぱいに広げる
