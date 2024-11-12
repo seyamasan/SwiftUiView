@@ -12,6 +12,8 @@ class Screens {
         case textView = "textView"
         case imageView = "imageView"
         case shapeView = "shapeView"
+        case listView = "listView"
+        case popularSpotListView = "popularSpotListView"
         
         // ScreenInformationを実装
         var screenTitle: String {
@@ -22,4 +24,10 @@ class Screens {
             NSLocalizedString("\(self.rawValue)Description", comment: "The description of the home screen")
         }
     }
+    
+    static let screenList: [Screens.ScreenInformations] = [
+        .textView,
+        .imageView,
+        .listView
+    ]
 }

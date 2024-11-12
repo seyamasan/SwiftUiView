@@ -23,7 +23,7 @@
 "imageViewDescription" = "View of Image.";
 "imageViewSeaText" = "This is the sea at night.\n Isn't it beautiful?";
 "imageViewNightViewText" = "This is the night view.\n It's incredibly beautiful, isn't it?";
-"imageViewGoShapeView" = "Go Shape View";
+"imageViewGoShapeView" = "Go to Shape View!";
 "imageViewJellyfishText" = "Jellyfish are so beautiful.";
 "imageViewFishText" = "Full of fish.";
 
@@ -31,3 +31,19 @@
 "shapeViewTitle" = "Shape View";
 "shapeViewDescription" = "View of the shape.";
 "shapeViewGradient" = "Gradient";
+
+//MARK: ListView
+"listViewTitle" = "List View";
+"listViewDescription" = "View of the list.";
+"ListViewGoPopularSpotListView" = "Go to the list of popular spots!";
+
+//MARK: PopularSpotListView
+"popularSpotListViewTitle" = "Popular spot";
+"popularSpotListViewDescription" = "You can search to narrow the list.";
+"popularSpotListViewSearchPrompt" = "Search for spots";
+"ramenJiro" = "Ramen Ziro";
+"kirinzi" = "Kirinzi";
+"menyaKirameki" = "Noodle shop Kirameki";
+"sugari" = "Sugari";
+"kibo" = "Tikyuu kibo de kangaero";
+"yumekata" = "Yume wo katare";

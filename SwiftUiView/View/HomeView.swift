@@ -8,17 +8,12 @@
 import SwiftUI
 
 struct HomeView: View {
-    let screens: [Screens.ScreenInformations] = [
-        .textView,
-        .imageView
-    ]
-    
     var body: some View {
         NavigationStack { // タイトルを表示するために使ってる
             ScrollView {
                 // LazyVStackはスクロール時に必要なタイミングで子ビューを生成する
                 LazyVStack(spacing: 16) { // ボタン間のスペース
-                    ForEach(self.screens, id: \.self) { screen in
+                    ForEach(Screens.screenList, id: \.self) { screen in
                         NavigationLink(destination: self.viewForScreen(screen)) {
                             Text(screen.screenTitle)
                                 .frame(maxWidth: .infinity) // ボタンを横いっぱいに広げる
@@ -44,6 +39,8 @@ struct HomeView: View {
             TextView(title: screen.screenTitle, discripition: screen.screenDescription)
         case .imageView:
             ImageView(title: screen.screenTitle, discripition: screen.screenDescription)
+        case .listView:
+            ListView(title: screen.screenTitle, discripition: screen.screenDescription)
         default:
             Text(String(localized: "unknownScreen"))
         }

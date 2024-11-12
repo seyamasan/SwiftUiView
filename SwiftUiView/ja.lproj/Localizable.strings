@@ -31,3 +31,19 @@
 "shapeViewTitle" = "Shape View";
 "shapeViewDescription" = "図形のViewです。";
 "shapeViewGradient" = "グラデーション";
+
+//MARK: ListView
+"listViewTitle" = "List View";
+"listViewDescription" = "リストのViewです。";
+"ListViewGoPopularSpotListView" = "人気スポットのリストへGo!";
+
+//MARK: PopularSpotListView
+"popularSpotListViewTitle" = "人気スポット";
+"popularSpotListViewDescription" = "検索してリストを絞ることができます。";
+"popularSpotListViewSearchPrompt" = "スポットの検索";
+"ramenJiro" = "ラーメン次郎";
+"kirinzi" = "きりん寺";
+"menyaKirameki" = "麺屋キラメキ";
+"sugari" = "すがり";
+"kibo" = "地球規模で考えろ";
+"yumekata" = "夢を語れ";
