@@ -11,6 +11,7 @@ struct ListView: View {
     private var title: String
     private var discripition: String
     private let popularSpotListViewInfo: Screens.ScreenInformations = .popularSpotListView
+    private let prefectureListViewInfo: Screens.ScreenInformations = .prefectureListView
     
     init(title: String, discripition: String) {
         self.title = title
@@ -25,6 +26,7 @@ struct ListView: View {
         ScrollView {
             LazyVStack(spacing: 16) {
                 self.popularSpotListViewButton
+                self.prefectureListViewInfoButton
             }
         }
         
@@ -38,7 +40,24 @@ struct ListView: View {
                 discripition: self.popularSpotListViewInfo.screenDescription
             )
         ) {
-            Text(String(localized: "ListViewGoPopularSpotListView"))
+            Text(String(localized: "goPopularSpotListView"))
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(.orange)
+                .foregroundColor(.black)
+                .cornerRadius(8)
+        }
+        .padding()
+    }
+    
+    private var prefectureListViewInfoButton: some View {
+        NavigationLink(
+            destination: PrefectureListView(
+                title: self.prefectureListViewInfo.screenTitle,
+                discripition: self.prefectureListViewInfo.screenDescription
+            )
+        ) {
+            Text(String(localized: "goPrefectureListView"))
                 .frame(maxWidth: .infinity)
                 .padding()
                 .background(.orange)

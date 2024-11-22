@@ -35,7 +35,8 @@
 //MARK: ListView
 "listViewTitle" = "List View";
 "listViewDescription" = "View of the list.";
-"ListViewGoPopularSpotListView" = "Go to the list of popular spots!";
+"goPopularSpotListView" = "Go to the list of popular spots!";
+"goPrefectureListView" = "Go to the list of prefecture!";
 
 //MARK: PopularSpotListView
 "popularSpotListViewTitle" = "Popular spot";
@@ -47,3 +48,20 @@
 "sugari" = "Sugari";
 "kibo" = "Tikyuu kibo de kangaero";
 "yumekata" = "Yume wo katare";
+
+//MARK: PrefectureListView
+"prefectureListViewTitle" = "Prefecture";
+"prefectureListViewDescription" = "A list with sections.";
+"shikoku" = "Shikoku";
+"tokushima" = "Tokushima Prefecture";
+"kagawa" = "Kagawa Prefecture";
+"ehime" = "Ehime Prefecture";
+"kochi" = "Kochi Prefecture";
+"kyusyu" = "Kyusyu";
+"fukuoka" = "Fukuoka Prefecture";
+"saga" = "Sage Prefecture";
+"nagasaki" = "Nagasaki Prefecture";
+"kumamoto" = "Kumamoto Prefecture";
+"oita" = "Oita Prefecture";
+"miyazaki" = "Miyaki Prefecture";
+"kagoshima" = "Kagoshima Prefecture";

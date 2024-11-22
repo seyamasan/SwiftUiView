@@ -35,7 +35,8 @@
 //MARK: ListView
 "listViewTitle" = "List View";
 "listViewDescription" = "リストのViewです。";
-"ListViewGoPopularSpotListView" = "人気スポットのリストへGo!";
+"goPopularSpotListView" = "人気スポットのリストへGo!";
+"goPrefectureListView" = "都道府県のリストへGo!";
 
 //MARK: PopularSpotListView
 "popularSpotListViewTitle" = "人気スポット";
@@ -47,3 +48,20 @@
 "sugari" = "すがり";
 "kibo" = "地球規模で考えろ";
 "yumekata" = "夢を語れ";
+
+//MARK: PrefectureListView
+"prefectureListViewTitle" = "都道府県";
+"prefectureListViewDescription" = "セクションがあるリストです。";
+"shikoku" = "四国";
+"tokushima" = "徳島県";
+"kagawa" = "香川県";
+"ehime" = "愛媛県";
+"kochi" = "高知県";
+"kyusyu" = "九州";
+"fukuoka" = "福岡県";
+"saga" = "佐賀県";
+"nagasaki" = "長崎県";
+"kumamoto" = "熊本県";
+"oita" = "大分県";
+"miyazaki" = "宮崎県";
+"kagoshima" = "鹿児島県";

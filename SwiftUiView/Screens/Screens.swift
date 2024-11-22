@@ -14,6 +14,7 @@ class Screens {
         case shapeView = "shapeView"
         case listView = "listView"
         case popularSpotListView = "popularSpotListView"
+        case prefectureListView = "prefectureListView"
         
         // ScreenInformationを実装
         var screenTitle: String {
