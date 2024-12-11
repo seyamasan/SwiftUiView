@@ -37,6 +37,7 @@
 "listViewDescription" = "リストのViewです。";
 "goPopularSpotListView" = "人気スポットのリストへGo!";
 "goPrefectureListView" = "都道府県のリストへGo!";
+"goPhotoListView" = "写真のリストへGo!";
 
 //MARK: PopularSpotListView
 "popularSpotListViewTitle" = "人気スポット";
@@ -53,11 +54,13 @@
 "prefectureListViewTitle" = "都道府県";
 "prefectureListViewDescription" = "セクションがあるリストです。";
 "shikoku" = "四国";
+"shikokuFooter" = "香川はうどんが美味しいよね。";
 "tokushima" = "徳島県";
 "kagawa" = "香川県";
 "ehime" = "愛媛県";
 "kochi" = "高知県";
 "kyusyu" = "九州";
+"kyusyuFooter" = "宮崎のチキン南蛮食べたいな。";
 "fukuoka" = "福岡県";
 "saga" = "佐賀県";
 "nagasaki" = "長崎県";
@@ -65,3 +68,7 @@
 "oita" = "大分県";
 "miyazaki" = "宮崎県";
 "kagoshima" = "鹿児島県";
+
+//MARK: PhotoistView
+"photoListViewTitle" = "写真リスト";
+"photoListViewDescription" = "写真のリストです。";

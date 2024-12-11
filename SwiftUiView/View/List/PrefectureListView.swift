@@ -11,23 +11,6 @@ struct PrefectureListView: View {
     private var title: String
     private var discripition: String
     
-    let shikoku = [
-        String(localized: "tokushima"),
-        String(localized: "kagawa"),
-        String(localized: "ehime"),
-        String(localized: "kochi")
-    ]
-    
-    let kyusyu = [
-        String(localized: "fukuoka"),
-        String(localized: "saga"),
-        String(localized: "nagasaki"),
-        String(localized: "kumamoto"),
-        String(localized: "oita"),
-        String(localized: "miyazaki"),
-        String(localized: "kagoshima")
-    ]
-    
     init(title: String, discripition: String) {
         self.title = title
         self.discripition = discripition
@@ -40,23 +23,53 @@ struct PrefectureListView: View {
                     .font(.title2)
                 
                 List {
-                    Section(header: Text(String(localized: "shikoku"))) {
-                        ForEach(shikoku, id: \.self) { prefecture in
+                    Section(
+                        header: Text(String(localized: "shikoku"))
+                            .font(.largeTitle)
+                            .padding(.top), // ヘッダー
+                        footer: Text(String(localized: "shikokuFooter")) // フッター
+                    ) {
+                        ForEach(Prefecture.shikoku, id: \.self) { prefecture in
                             Text(prefecture)
                         }
                     }
                     
-                    Section(header: Text(String(localized: "kyusyu"))) {
-                        ForEach(kyusyu, id: \.self) { prefecture in
+                    Section(
+                        header: Text(String(localized: "kyusyu"))
+                            .font(.largeTitle)
+                            .padding(.top),
+                        footer: Text(String(localized: "kyusyuFooter"))
+                    ) {
+                        ForEach(Prefecture.kyusyu, id: \.self) { prefecture in
                             Text(prefecture)
                         }
                     }
                 }
+                .listStyle(.insetGrouped) // リストのスタイル
             }
             .padding()
             .navigationTitle(self.title)
         }
     }
+}
+
+struct Prefecture {
+    static let shikoku = [
+        String(localized: "tokushima"),
+        String(localized: "kagawa"),
+        String(localized: "ehime"),
+        String(localized: "kochi")
+    ]
+    
+    static let kyusyu = [
+        String(localized: "fukuoka"),
+        String(localized: "saga"),
+        String(localized: "nagasaki"),
+        String(localized: "kumamoto"),
+        String(localized: "oita"),
+        String(localized: "miyazaki"),
+        String(localized: "kagoshima")
+    ]
 }
 
 #Preview {

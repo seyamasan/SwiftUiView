@@ -37,6 +37,7 @@
 "listViewDescription" = "View of the list.";
 "goPopularSpotListView" = "Go to the list of popular spots!";
 "goPrefectureListView" = "Go to the list of prefecture!";
+"goPhotoListView" = "Go to the list of photo!";
 
 //MARK: PopularSpotListView
 "popularSpotListViewTitle" = "Popular spot";
@@ -53,11 +54,13 @@
 "prefectureListViewTitle" = "Prefecture";
 "prefectureListViewDescription" = "A list with sections.";
 "shikoku" = "Shikoku";
+"shikokuFooter" = "Kagawa has great udon noodles.";
 "tokushima" = "Tokushima Prefecture";
 "kagawa" = "Kagawa Prefecture";
 "ehime" = "Ehime Prefecture";
 "kochi" = "Kochi Prefecture";
 "kyusyu" = "Kyusyu";
+"kyusyuFooter" = "I'd like to try Miyazaki's chicken nanban.";
 "fukuoka" = "Fukuoka Prefecture";
 "saga" = "Sage Prefecture";
 "nagasaki" = "Nagasaki Prefecture";
@@ -65,3 +68,7 @@
 "oita" = "Oita Prefecture";
 "miyazaki" = "Miyaki Prefecture";
 "kagoshima" = "Kagoshima Prefecture";
+
+//MARK: PhotoistView
+"photoListViewTitle" = "Photo List";
+"photoListViewDescription" = "A view of the photo listings.";
