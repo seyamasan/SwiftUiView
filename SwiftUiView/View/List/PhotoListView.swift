@@ -24,7 +24,7 @@ struct PhotoListView: View {
                     .font(.title2)
                 
                 List(photoArray) { item in
-                    self.photoRaw(photo: item)
+                    self.photoRow(photo: item)
                 }
             }
             .padding()
@@ -32,7 +32,7 @@ struct PhotoListView: View {
         }
     }
     
-    private func photoRaw(photo: PhotoData) -> some View {
+    private func photoRow(photo: PhotoData) -> some View {
         HStack {
             Image(photo.imageName)
                 .resizable()
