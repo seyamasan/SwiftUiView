@@ -72,3 +72,19 @@
 //MARK: PhotoistView
 "photoListViewTitle" = "写真リスト";
 "photoListViewDescription" = "写真のリストです。";
+
+//MARK: PhotoData
+"photoPizza" = "ピザ";
+"photoCake" = "ケーキ";
+"photoDolphin" = "イルカ";
+"photoSettingSun" = "夕日";
+"photoOpenFire" = "焚き火";
+"photoTogetsukyoBridge" = "渡月橋";
+"photoBeach" = "海岸";
+"photoCurry" = "カレー";
+"photoGyoza" = "餃子";
+"photoChicken" = "鶏";
+"photoCambodiaNight" = "カンボジアの夜";
+"photoSunsetInCambodia" = "カンボジアの夕日";
+"photoAngkorWat" = "アンコールワット";
+"photoFavoriteBird" = "好きな鳥";

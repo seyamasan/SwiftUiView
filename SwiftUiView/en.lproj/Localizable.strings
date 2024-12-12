@@ -72,3 +72,19 @@
 //MARK: PhotoistView
 "photoListViewTitle" = "Photo List";
 "photoListViewDescription" = "A view of the photo listings.";
+
+//MARK: PhotoData
+"photoPizza" = "Pizza";
+"photoCake" = "Cake";
+"photoDolphin" = "Dolphin";
+"photoSettingSun" = "Setting sun";
+"photoOpenFire" = "Open fire";
+"photoTogetsukyoBridge" = "Togetsukyo bridge";
+"photoBeach" = "Beach";
+"photoCurry" = "Curry";
+"photoGyoza" = "Gyoza";
+"photoChicken" = "Chicken";
+"photoCambodiaNight" = "Cambodia night";
+"photoSunsetInCambodia" = "Sunset in cambodia";
+"photoAngkorWat" = "Angkor wat";
+"photoFavoriteBird" = "Favorite bird";

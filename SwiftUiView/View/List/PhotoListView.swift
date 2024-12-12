@@ -22,9 +22,25 @@ struct PhotoListView: View {
             VStack {
                 Text(self.discripition)
                     .font(.title2)
+                
+                List(photoArray) { item in
+                    self.photoRaw(photo: item)
+                }
             }
             .padding()
             .navigationTitle(self.title)
+        }
+    }
+    
+    private func photoRaw(photo: PhotoData) -> some View {
+        HStack {
+            Image(photo.imageName)
+                .resizable()
+                .frame(width: 60, height: 60)
+                .clipShape(Circle())
+                .overlay(Circle().stroke(Color.gray))
+            Text(photo.title)
+            Spacer()
         }
     }
 }
