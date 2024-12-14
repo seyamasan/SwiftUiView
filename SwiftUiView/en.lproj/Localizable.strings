@@ -69,9 +69,13 @@
 "miyazaki" = "Miyaki Prefecture";
 "kagoshima" = "Kagoshima Prefecture";
 
-//MARK: PhotoistView
+//MARK: PhotoListView
 "photoListViewTitle" = "Photo List";
 "photoListViewDescription" = "A view of the photo listings.";
+
+//MARK: PhotoDetailView
+"photoDetailViewTitle" = "Photo Detail";
+"photoDetailViewDescription" = "A view of the photo detail.";
 
 //MARK: PhotoData
 "photoPizza" = "Pizza";

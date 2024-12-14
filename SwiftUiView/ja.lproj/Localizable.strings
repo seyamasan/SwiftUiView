@@ -69,9 +69,13 @@
 "miyazaki" = "宮崎県";
 "kagoshima" = "鹿児島県";
 
-//MARK: PhotoistView
+//MARK: PhotoListView
 "photoListViewTitle" = "写真リスト";
 "photoListViewDescription" = "写真のリストです。";
+
+//MARK: PhotoDetailView
+"photoDetailViewTitle" = "写真の詳細";
+"photoDetailViewDescription" = "写真の詳細です。";
 
 //MARK: PhotoData
 "photoPizza" = "ピザ";

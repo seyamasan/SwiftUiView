@@ -11,6 +11,7 @@ struct PhotoListView: View {
     
     private var title: String
     private var discripition: String
+    private let photoDetailViewInfo: Screens.ScreenInformations = .photoDetailView
     
     init(title: String, discripition: String) {
         self.title = title
@@ -23,8 +24,16 @@ struct PhotoListView: View {
                 Text(self.discripition)
                     .font(.title2)
                 
-                List(photoArray) { item in
-                    self.photoRow(photo: item)
+                List(PhotoDataDetail.photos) { item in
+                    NavigationLink(
+                        destination: PhotoDetailView(
+                            title: self.photoDetailViewInfo.screenTitle,
+                            discripition: self.photoDetailViewInfo.screenDescription,
+                            photo: item
+                        )
+                    ) {
+                        self.photoRow(photo: item)
+                    }
                 }
             }
             .padding()
