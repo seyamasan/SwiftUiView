@@ -35,9 +35,10 @@
 //MARK: ListView
 "listViewTitle" = "List View";
 "listViewDescription" = "リストのViewです。";
-"goPopularSpotListView" = "人気スポットのリストへGo!";
-"goPrefectureListView" = "都道府県のリストへGo!";
-"goPhotoListView" = "写真のリストへGo!";
+"popularSpotListViewGo" = "人気スポットのリストへGo!";
+"prefectureListViewGo" = "都道府県のリストへGo!";
+"photoListViewGo" = "写真のリストへGo!";
+"webListViewGo" = "WebのリストへGo!";
 
 //MARK: PopularSpotListView
 "popularSpotListViewTitle" = "人気スポット";
@@ -77,6 +78,10 @@
 "photoDetailViewTitle" = "写真の詳細";
 "photoDetailViewDescription" = "写真の詳細です。";
 
+//MARK: WebListView
+"webListViewTitle" = "Webリスト";
+"webListViewDescription" = "Webのリストです。";
+
 //MARK: PhotoData
 "photoPizza" = "ピザ";
 "photoCake" = "ケーキ";
@@ -92,3 +97,11 @@
 "photoSunsetInCambodia" = "カンボジアの夕日";
 "photoAngkorWat" = "アンコールワット";
 "photoFavoriteBird" = "好きな鳥";
+
+//MARK: WebData
+"appStore" = "アップストア";
+"googlePlayStore" = "グーグルプレイストア";
+"mentalRecord" = "メンタルレコード";
+"appStoreUrl" = "https://www.apple.com/jp/app-store/";
+"googlePlayStoreUrl" = "https://play.google.com/store/games?hl=ja";
+"mentalRecordUrl" = "https://play.google.com/store/apps/details?id=jp.example.mentalrecordapplication";

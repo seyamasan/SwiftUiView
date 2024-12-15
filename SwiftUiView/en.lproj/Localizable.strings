@@ -35,9 +35,10 @@
 //MARK: ListView
 "listViewTitle" = "List View";
 "listViewDescription" = "View of the list.";
-"goPopularSpotListView" = "Go to the list of popular spots!";
-"goPrefectureListView" = "Go to the list of prefecture!";
-"goPhotoListView" = "Go to the list of photo!";
+"popularSpotListViewGo" = "Go to the list of popular spots!";
+"prefectureListViewGo" = "Go to the list of prefecture!";
+"photoListViewGo" = "Go to the list of photo!";
+"webListViewGo" = "Go to the list of web!";
 
 //MARK: PopularSpotListView
 "popularSpotListViewTitle" = "Popular spot";
@@ -77,6 +78,10 @@
 "photoDetailViewTitle" = "Photo Detail";
 "photoDetailViewDescription" = "A view of the photo detail.";
 
+//MARK: WebListView
+"webListViewTitle" = "Web List";
+"webListViewDescription" = "A view of the web listings.";
+
 //MARK: PhotoData
 "photoPizza" = "Pizza";
 "photoCake" = "Cake";
@@ -92,3 +97,11 @@
 "photoSunsetInCambodia" = "Sunset in cambodia";
 "photoAngkorWat" = "Angkor wat";
 "photoFavoriteBird" = "Favorite bird";
+
+//MARK: WebData
+"appStore" = "App Store";
+"googlePlayStore" = "Google Play Store";
+"mentalRecord" = "Mental Record";
+"appStoreUrl" = "https://www.apple.com/jp/app-store/";
+"googlePlayStoreUrl" = "https://play.google.com/store/games?hl=ja";
+"mentalRecordUrl" = "https://play.google.com/store/apps/details?id=jp.example.mentalrecordapplication";

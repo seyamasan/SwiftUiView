@@ -10,9 +10,7 @@ import SwiftUI
 struct ListView: View {
     private var title: String
     private var discripition: String
-    private let popularSpotListViewInfo: Screens.ScreenInformations = .popularSpotListView
-    private let prefectureListViewInfo: Screens.ScreenInformations = .prefectureListView
-    private let photoListViewInfo: Screens.ScreenInformations = .photoListView
+    private let screenInfoList: [Screens.ScreenInformations] = Screens.listViewSubScreens
     
     init(title: String, discripition: String) {
         self.title = title
@@ -26,23 +24,22 @@ struct ListView: View {
         
         ScrollView {
             VStack(spacing: 16) {
-                self.popularSpotListViewButton
-                self.prefectureListViewInfoButton
-                self.photoListViewInfoButton
+                ForEach(screenInfoList, id: \.self) { screenInfo in
+                    navigationButton(for: screenInfo)
+                }
             }
         }
         
         .navigationBarTitle(title)
     }
     
-    private var popularSpotListViewButton: some View {
+    private func navigationButton(
+        for screenInfo: Screens.ScreenInformations
+    ) -> some View {
         NavigationLink(
-            destination: PopularSpotListView(
-                title: self.popularSpotListViewInfo.screenTitle,
-                discripition: self.popularSpotListViewInfo.screenDescription
-            )
+            destination: destinationView(for: screenInfo)
         ) {
-            Text(String(localized: "goPopularSpotListView"))
+            Text(NSLocalizedString("\(screenInfo.rawValue)Go", comment: "The title of the screen"))
                 .frame(maxWidth: .infinity)
                 .padding()
                 .background(.orange)
@@ -52,39 +49,22 @@ struct ListView: View {
         .padding()
     }
     
-    private var prefectureListViewInfoButton: some View {
-        NavigationLink(
-            destination: PrefectureListView(
-                title: self.prefectureListViewInfo.screenTitle,
-                discripition: self.prefectureListViewInfo.screenDescription
-            )
-        ) {
-            Text(String(localized: "goPrefectureListView"))
-                .frame(maxWidth: .infinity)
-                .padding()
-                .background(.orange)
-                .foregroundColor(.black)
-                .cornerRadius(8)
+    @ViewBuilder
+    private func destinationView(for screenInfo: Screens.ScreenInformations) -> some View {
+        switch screenInfo {
+        case .popularSpotListView:
+            PopularSpotListView(title: screenInfo.screenTitle, discripition: screenInfo.screenDescription)
+        case .prefectureListView:
+            PrefectureListView(title: screenInfo.screenTitle, discripition: screenInfo.screenDescription)
+        case .photoListView:
+            PhotoListView(title: screenInfo.screenTitle, discripition: screenInfo.screenDescription)
+        case .webListView:
+            WebListView(title: screenInfo.screenTitle, discripition: screenInfo.screenDescription)
+        default:
+            EmptyView()
         }
-        .padding()
     }
     
-    private var photoListViewInfoButton: some View {
-        NavigationLink(
-            destination: PhotoListView(
-                title: self.photoListViewInfo.screenTitle,
-                discripition: self.photoListViewInfo.screenDescription
-            )
-        ) {
-            Text(String(localized: "goPhotoListView"))
-                .frame(maxWidth: .infinity)
-                .padding()
-                .background(.orange)
-                .foregroundColor(.black)
-                .cornerRadius(8)
-        }
-        .padding()
-    }
 }
 
 #Preview {

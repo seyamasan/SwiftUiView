@@ -17,6 +17,7 @@ class Screens {
         case prefectureListView = "prefectureListView"
         case photoListView = "photoListView"
         case photoDetailView = "photoDetailView"
+        case webListView = "webListView"
         
         // ScreenInformationを実装
         var screenTitle: String {
@@ -32,5 +33,12 @@ class Screens {
         .textView,
         .imageView,
         .listView
+    ]
+    
+    static let listViewSubScreens: [Screens.ScreenInformations] = [
+        .popularSpotListView,
+        .prefectureListView,
+        .photoListView,
+        .webListView
     ]
 }
